@@ -101,7 +101,8 @@ def train(_):
                           inter_op_parallelism_threads=ncpu)
   config.gpu_options.allow_growth = True
   
-  path = 'ours/2025-03-06_18-22-34/01200'
+  # path = 'ours/2025-03-06_18-22-34/01200'
+  path = None
   for iii in range(1):
     graph = tf.Graph()
     with graph.as_default():

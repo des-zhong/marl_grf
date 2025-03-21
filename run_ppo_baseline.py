@@ -101,8 +101,8 @@ def train(_):
                           intra_op_parallelism_threads=ncpu,
                           inter_op_parallelism_threads=ncpu)
   config.gpu_options.allow_growth = True
-  
-  path = 'mlp/2025-03-05_16-48-04/04800'
+  path = None
+  # path = 'mlp/2025-03-05_16-48-04/04800'
   os.environ["CUDA_VISIBLE_DEVICES"] = "0"
   graph = tf.Graph()
   with graph.as_default():
